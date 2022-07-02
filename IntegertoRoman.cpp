@@ -44,4 +44,39 @@ string intToRoman(int num) {
             
         }
         return romannumeral;
+}
+
+
+class Solution {
+public:
+    string intToRoman(int num) {
+        string romannumeral;
+        int rem = 0, cnt = 0;
+        vector<int> ivec;
+        /*vector<string> ones{"I", "II", "III", "IV", "V"
+                            "VI", "VII", "VIII", "IX"};
+        vector<string> tens{"X", "XX", "XXX", "XL", "L"
+                            "LX", "LXX", "LXXX", "XC"};
+        vector<string> hundreds{"C", "CC", "CCC", "CD", "D"
+                            "DC", "DCC", "DCCC", "CM"};
+        vector<string> thousands{"M", "MM", "MMM" };*/
+        string romandigits[4][9] = {{"I", "II", "III", "IV", "V"
+                            "VI", "VII", "VIII", "IX"}, {"X", "XX", "XXX", "XL", "L"
+                            "LX", "LXX", "LXXX", "XC"}, {"C", "CC", "CCC", "CD", "D"
+                            "DC", "DCC", "DCCC", "CM"}, {"M", "MM", "MMM" }};
+        while (num != 0){
+            rem = num%10;
+            ivec.push_back(rem);
+            num = num/10;
+            cnt++;
+        }
+        romannumeral += romandigits[0][ivec[0]];
+        auto p = romannumeral.begin();
+        if (ivec.size() > 1){
+            for (int i = 1; i != ivec.size(); ++i){
+                romannumeral.insert(p, romandigits[i][ivec[i]]);
+            }
+        }
+        return romannumeral;
     }
+};
