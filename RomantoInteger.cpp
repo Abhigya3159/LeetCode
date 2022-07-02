@@ -29,4 +29,4 @@ int romanToInt(string s) {
         if (s.find("CM") < s.size())
             sum = sum - 200;
         return sum;
-    }
+}
