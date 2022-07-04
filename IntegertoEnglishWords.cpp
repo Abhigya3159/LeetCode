@@ -3,9 +3,7 @@ class Solution {
 public:
     string hundreds(const string &val, const int &num){
         string words;
-        vector<string> svec{"", "One", "Two", "Three", "Four", "Five",
-                           "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", 
-                           "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
+        vector<string> svec{"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen",
                            "Seventeen", "Eighteen", "Nineteen"};
         vector<string> svec2{"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
         if (val.size() == 1){
@@ -19,10 +17,7 @@ public:
             else words = words + svec2[num/10];
         }
         if (val.size() == 3){
-            int sbscrpt = (num%100)/10;
-            int sbscrpt2 = (num%100)%10; 
-            int sbscrpt3 = num/100;
-            int sbscrpt4 = num%100; 
+            int sbscrpt = (num%100)/10, sbscrpt2 = (num%100)%10, sbscrpt3 = num/100, sbscrpt4 = num%100; 
             if (sbscrpt == 0 && sbscrpt2 == 0 && sbscrpt3 == 0 && sbscrpt4 == 0) words += "";
             else if (sbscrpt == 0 && sbscrpt2 != 0) words = words + svec[sbscrpt3] + " Hundred " + svec[sbscrpt2];
             else if (sbscrpt != 0 && sbscrpt2 == 0) words = words + svec[sbscrpt3] + " Hundred " + svec2[sbscrpt];
