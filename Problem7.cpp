@@ -21,4 +21,20 @@ public:
     }
 };
 
-//SOLUTION 2
+//SOLUTION 2: WORKS BUT EXCEEDS RUNTIME
+//Bulbs with even number of factors excluding 1 will be on, e.g., For 10 bulbs, bulb 1(0 factors greaters than 1), bulb 4(Two factors (2 and 4) greater than 1) 
+//and bulb 9(Two factors (3 and 9) greater than 1) will be on
+class Solution {
+public:
+    int bulbSwitch(int n) {
+        int count = 0;
+        for (int i = 1; i <= n; ++i){
+            int numberoffactors = 0;
+            for (int j = 2; j <= i; ++j){
+                if (i%j == 0) ++numberoffactors;
+            }
+            if (numberoffactors%2 == 0) ++count;
+        }
+        return count;
+    }
+};
