@@ -1,4 +1,4 @@
-//SOLUTION 1: WORKS BUT EXCEEDS RUNTIME
+//SOLUTION 1: EXCEEDS RUNTIME
 class Solution {
 public:
     int bulbSwitch(int n) {
@@ -21,7 +21,7 @@ public:
     }
 };
 
-//SOLUTION 2: WORKS BUT EXCEEDS RUNTIME
+//SOLUTION 2: EXCEEDS RUNTIME
 //Bulbs with even number of factors excluding 1 will be on, e.g., For 10 bulbs, bulb 1(0 factors greaters than 1), bulb 4(Two factors (2 and 4) greater than 1) 
 //and bulb 9(Two factors (3 and 9) greater than 1) will be on
 class Solution {
