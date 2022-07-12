@@ -20,3 +20,17 @@ public:
         return count;
     }
 };
+
+//BEST SOLUTION
+class Solution {
+public:
+    int numTimesAllBlue(vector<int>& flips) {
+        int count = 0, previoushighestindex = 0;
+        for (int i = 0; i != flips.size(); ++i){
+            if (flips[i] > previoushighestindex) previoushighestindex = flips[i];
+//Example: If the previous highest index is 3 and the current iterator value is 2(position 3), we must increase count because 1,2 and 3 have all appeared
+            if ((i+1) == previoushighestindex) count++;
+        }
+        return count;
+    }
+};
