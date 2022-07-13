@@ -1,9 +1,9 @@
 /* Problem
-Initial condition: 00000
-Binary string is prefix-aligned if all 1s are at the beginning and all 0s at the end e.g., 11000
-Input = Vector containing order in which 0s in the binary string must be flipped e.g., 
-        for vector<int> vec{3, 2, 1, 4, 5}, the binary string is prefix-aligned 3 times (00100 -> 01100 -> 11100* -> 11110* -> 11111*, (*) denotes prefix-aligned)
-Output = Number of times during this process the string is prefix-aligned
+A binary string is prefix-aligned if all 1s are at the beginning and all 0s at the end e.g., 11000
+Input = Vector containing order in which 0s in the binary string must be flipped; vector size = number of 0s in the string
+        Example: For vector {3, 2, 1, 4, 5}, the binary string 00000 is prefix-aligned 3 times 
+        00100 -> 01100 -> 11100* -> 11110* -> 11111*, (*) denotes prefix-aligned
+Output = Number of times binary string is prefix-aligned during the process
 */
 
 //SOLUTION 1: RUNTIME EXCEEDED
