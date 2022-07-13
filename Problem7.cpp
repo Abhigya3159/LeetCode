@@ -1,3 +1,13 @@
+/* Problem
+Input: number of bulbs n
+Initial condition: All bulbs are off
+Round 1: All bulbs on
+Round 2: Toggle every second bulb
+Round 3: Toggle every third bulb
+Round i: Toggle every ith bulb
+Output: Number of bulbs on at the end
+*/
+
 //SOLUTION 1: EXCEEDS RUNTIME
 class Solution {
 public:
