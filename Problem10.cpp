@@ -23,7 +23,7 @@ public:
     }
 };
 
-//FASTEST SOLUTION USING MAP 
+//FASTER SOLUTION (O(n) time complexity) USING MAP
 class Solution {
 public:
  vector<int> twoSum(vector<int>& nums, int target) {
