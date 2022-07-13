@@ -6,3 +6,4 @@ Problem 5: Maximum number of words you can type <br />
 Problem 6: Bulb Switcher II <br />
 Problem 7: Bulb Switcher <br />
 Problem 8: Number of times binary string is prefix-aligned <br />
+Problem 9: Longest common prefix <br />
