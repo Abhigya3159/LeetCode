@@ -8,3 +8,4 @@ Problem 7: Bulb Switcher (Medium) <br />
 Problem 8: Number of times binary string is prefix-aligned (Medium) <br />
 Problem 9: Longest common prefix (Easy) <br />
 Problem 10: Two Sum (Easy) <br />
+Problem 11: Find All K-Distant Indices in an Array (Easy) <br />
